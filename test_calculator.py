@@ -1,6 +1,6 @@
 # test_calculator.py
 import pytest
-from calculator import add #, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide
 
 
 # ─── 덧셈 ────────────────────────────────
@@ -14,7 +14,6 @@ class TestAdd:
     def test_add_zero(self):
         assert add(5, 0) == 5
 
-'''
 # ─── 뺄셈 ────────────────────────────────
 class TestSubtract:
     def test_subtract_basic(self):
@@ -47,4 +46,3 @@ class TestDivide:
     def test_divide_by_zero_raises(self):
         with pytest.raises(ValueError):
             divide(5, 0)
-            '''
